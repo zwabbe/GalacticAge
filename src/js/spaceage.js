@@ -1,15 +1,17 @@
 export default class GalaxyAge {
   constructor(age) {
     this.age = age;
-    return this.age;
+    this.ageLimit = 80;
   }
 
+
+
   Mercury() {
-    this.age = (this.age * .24);
+    this.age = Math.floor(this.age * .24);
     return this.age;
   }
   Venus() {
-    this.age = (this.age * .62);
+    this.age = Math.floor(this.age * .62);
     return this.age;
   }
   Mars() {
@@ -17,7 +19,17 @@ export default class GalaxyAge {
     return this.age;
   }
   Jupiter() {
-    this.age = (this.age * 11.86);
+    this.age = Math.floor(this.age * 11.86);
     return this.age;
   }
+
+
+
+  lifeExpectency() {
+    let posDif = (this.ageLimit - this.age);
+    let negDif = Math.abs(this.age - this.ageLimit);
+
+  }
 }
+// let dif = Math.abs(this.age - this.ageLimit)
+// console.log(dif);
