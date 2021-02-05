@@ -1,6 +1,9 @@
 export default class GalaxyAge {
   constructor(age) {
-    this.age = age;
+    this.age = 10;
+
+
+    return this.age
   }
 
   Mercury() {
