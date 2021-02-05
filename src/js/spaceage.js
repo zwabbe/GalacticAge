@@ -12,5 +12,8 @@ export default class GalaxyAge {
     this.age = (this.age * .62);
     return this.age;
   }
-
+  Mars() {
+    this.age = Math.floor(this.age * 1.88); //adding in Math.floor to round down to 18
+    return this.age
+  }
 }
