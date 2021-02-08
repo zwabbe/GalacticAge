@@ -1,17 +1,19 @@
-# (Application Name)
+# _Galaxy Age Calculator_
 
-#### (Brief Description of Application)
 
 #### By Jer Miller
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Jest_
+* _VScode_
 
 ## Description
+
+This page is designed to take in a few inputs from the user such as Age and some questions about their life styles choices. This determines their average lifespan.
+It will then tell the user their average life span and how long they would have to live on each planet.  
 
 ## Setup/Installation Requirements
 
@@ -23,8 +25,8 @@
 
 ## Known Bugs
 ```
-* _Any known issues_
-* _should go here_
+_
+
 ```
 ## License
 [CC0](https://github.com/idleberg/Creative-Commons-Markdown/blob/master/4.0/zero.markdown)
