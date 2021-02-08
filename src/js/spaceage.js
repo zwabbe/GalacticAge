@@ -1,45 +1,58 @@
+import $ from 'jquery';
+
+
+
 export default class GalaxyAge {
   constructor(age) {
     this.age = age;
-    this.ageLimit = 80;
+    this.ageLimit = 70;
   }
 
 
 
-  Mercury() {
-    this.age = Math.floor(this.age * .24);
-    this.lifeExpectency();
-    return this.age;
-  }
   Venus() {
-    this.age = Math.floor(this.age * .62);
-    return this.age;
+    const ageVenus = Math.floor(this.age * .62);
+    if(ageVenus < this.ageLimit){
+      let postResult= (this.ageLimit-ageVenus);
+      $("#venus").text(`You would have ${ postResult } year's left on Venus!`)
+    }
+    else {
+      let postResult = (ageVenus-this.ageLimit);
+      $("#venus").text(`you would of died ${ postResult } years ago on Venus`)
   }
+    return ageVenus;
+  }
+
   Mars() {
     //adding in Math.floor to round down 
-    this.age = Math.floor(this.age * 1.88);
-    return this.age;
+    const ageMars = Math.floor(this.age * 1.88);
+    if(ageMars < this.ageLimit){
+      let postResult= (this.ageLimit-ageMars);
+      $("#mars").text(`You would have ${ postResult } year's left on Mars!`)
+    }
+    else {
+      let postResult = (ageMars-this.ageLimit);
+      $("#mars").text(`you would of died ${ postResult } years ago on Mars`)
   }
+    return ageMars;
+  }
+
   Jupiter() {
-    this.age = Math.floor(this.age * 11.86);
-    return this.age;
-  }
-
-
-
-  lifeExpectency() {
-    if (this.age < this.ageLimit) {
-      let posDif = (this.ageLimit - this.age);
-      console.log("Do not worry spring chicken you still have "+ posDif + "years left!");
-      return this.age;
-    }else if (this.age > this.ageLimit) {
-      let negDif = Math.abs(this.age - this.ageLimit);
-      console.log("Unf you would of passsed away about "+negDif+" ago....");
-      return this.age;
+    const ageJupiter = Math.floor(this.age * 11.86);
+    if(ageJupiter < this.ageLimit){
+      let postResult= (this.ageLimit-ageJupiter);
+      $("#jupiter").text(`You would have ${ postResult } year's left on Jupiter!`)
     }
-
-    }
+    else {
+      let postResult = (ageJupiter-this.ageLimit);
+      $("#jupiter").text(`you would of died ${ postResult } years ago on Jupiter`)
   }
-
-// let dif = Math.abs(this.age - this.ageLimit)
-// console.log(dif);
+    return ageJupiter;
+  }
+  
+//     lifeExpectency() {
+// forEach()
+//     }
+   
+    
+  }
