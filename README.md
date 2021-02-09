@@ -17,15 +17,14 @@ It will then tell the user their average life span and how long they would have 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone repository to your desktop_
+* _open GitBash at the project directory_
+* _in Gitbash run $npm install and wait for it to install_
+* _run $npm run build to open up the localhost to get a live stage for your work_
+
 
 ## Known Bugs
 ```
-_
 
 ```
 ## License
