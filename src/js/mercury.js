@@ -1,12 +1,10 @@
 import $ from 'jquery';
 
-
 export default class Mercury {
 constructor(age){
     this.age= age;
     this.ageLimit= 70;
 }
-
 
 mercuryAge(){
 
@@ -19,6 +17,6 @@ mercuryAge(){
       let postResult = (ageMercury-this.ageLimit);
       $("#mercury").text(`you would of died ${ postResult } years ago on Mercury`);
   }
-    return ;
+    return ageMercury;
   }
 }
