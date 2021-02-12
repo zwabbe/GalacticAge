@@ -41,7 +41,8 @@ module.exports = {
             name: '[name].[ext]',
             outputPath: 'assets/images/'
           }
-        }]
+        }
+      ]
       },
       {
         test: /\.html$/,

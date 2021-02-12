@@ -22,30 +22,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">73.91% </span>
+                <span class="strong">73.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>17/23</span>
+                <span class='fraction'>22/30</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/6</span>
+                <span class='fraction'>4/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">73.91% </span>
+                <span class="strong">73.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>17/23</span>
+                <span class='fraction'>22/30</span>
             </div>
         
             
@@ -113,7 +113,18 @@
 <a name='L55'></a><a href='#L55'>55</a>
 <a name='L56'></a><a href='#L56'>56</a>
 <a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -124,6 +135,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -139,7 +161,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -150,6 +171,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -180,61 +202,72 @@ export default class GalaxyAge {
     this.ageLimit = 70;
   }
 &nbsp;
-&nbsp;
-&nbsp;
   Venus() {
     const ageVenus = Math.floor(this.age * .62);
     <span class="missing-if-branch" title="else path not taken" >E</span>if(ageVenus &lt; this.ageLimit){
       let postResult= (this.ageLimit-ageVenus);
-      $("#venus").text(`You would have ${ postResult } year's left on Venus!`)
+      $("#venus").text(`You would have ${ postResult } year's left on Venus!`);
     }
     else {
       let postResult = (<span class="cstat-no" title="statement not covered" >ageVenus-this.ageLimit)</span>;
-<span class="cstat-no" title="statement not covered" >      $("#venus").text(`you would of died ${ postResult } years ago on Venus`)</span>
+<span class="cstat-no" title="statement not covered" >      $("#venus").text(`you would of died ${ postResult } years ago on Venus`);</span>
   }
     return ageVenus;
   }
+  Mercury() {
 &nbsp;
-  Mars() {
-    //adding in Math.floor to round down 
-    const ageMars = Math.floor(this.age * 1.88);
-    <span class="missing-if-branch" title="else path not taken" >E</span>if(ageMars &lt; this.ageLimit){
-      let postResult= (this.ageLimit-ageMars);
-      $("#mars").text(`You would have ${ postResult } year's left on Mars!`)
+    const ageMercury = Math.floor(this.age * .24);
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (ageMercury &lt; this.ageLimit) {
+      let postResult = (this.ageLimit - ageMercury);
+      $("#mercury").text(`Your current lifestyle would put your avg life span at ${this.ageLimit}, You would have ${postResult} year's left on Mercury!`)
     }
     else {
-      let postResult = (<span class="cstat-no" title="statement not covered" >ageMars-this.ageLimit)</span>;
-<span class="cstat-no" title="statement not covered" >      $("#mars").text(`you would of died ${ postResult } years ago on Mars`)</span>
+      let postResult = (<span class="cstat-no" title="statement not covered" >ageMercury - this.ageLimit)</span>;
+<span class="cstat-no" title="statement not covered" >      $("#mercury").text(`you would of died ${postResult} years ago on Mercury`);</span>
+    }
+    return ageMercury;
   }
+&nbsp;
+  Mars() {
+    const ageMars = Math.floor(this.age * 1.88);
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (ageMars &lt; this.ageLimit) {
+      let postResult = (this.ageLimit - ageMars);
+      $("#mars").text(`You would have ${postResult} year's left on Mars!`)
+    }
+    else {
+      let postResult = (<span class="cstat-no" title="statement not covered" >ageMars - this.ageLimit)</span>;
+<span class="cstat-no" title="statement not covered" >      $("#mars").text(`you would of died ${postResult} years ago on Mars`)</span>
+    }
     return ageMars;
   }
 &nbsp;
+&nbsp;
   Jupiter() {
     const ageJupiter = Math.floor(this.age * 11.86);
-    <span class="missing-if-branch" title="if path not taken" >I</span>if(ageJupiter &lt; this.ageLimit){
-      let postResult= (<span class="cstat-no" title="statement not covered" >this.ageLimit-ageJupiter)</span>;
-<span class="cstat-no" title="statement not covered" >      $("#jupiter").text(`You would have ${ postResult } year's left on Jupiter!`)</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (ageJupiter &lt; this.ageLimit) {
+      let postResult = (<span class="cstat-no" title="statement not covered" >this.ageLimit - ageJupiter)</span>;
+<span class="cstat-no" title="statement not covered" >      $("#jupiter").text(`You would have ${postResult} year's left on Jupiter!`)</span>
     }
     else {
-      let postResult = (ageJupiter-this.ageLimit);
-      $("#jupiter").text(`you would of died ${ postResult } years ago on Jupiter`)
-  }
+      let postResult = (ageJupiter - this.ageLimit);
+      $("#jupiter").text(`you would of died ${postResult} years ago on Jupiter`)
+    }
     return ageJupiter;
   }
-  
-//     lifeExpectency() {
-// forEach()
-//     }
-   
-    
-  }</pre></td></tr></table></pre>
+}
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Feb 08 2021 00:21:08 GMT-0800 (Pacific Standard Time)
+                at Thu Feb 11 2021 21:38:47 GMT-0800 (Pacific Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>
